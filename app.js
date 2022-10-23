@@ -305,7 +305,7 @@
 
 // map
 // filter   ---- filter returns all indexes jis jis mn condition true hojayegi
-// find
+// find --- find one specific thing
 // findIndex
 // some
 // foreach
