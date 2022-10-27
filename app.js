@@ -146,15 +146,27 @@
 
 // let value1 = 20;
 // let value2 = 30;
-// let operator = "+"
+// let operator = "*"
 
-// operator == "+" ? console.log(value1+value2) : operator == "*" ? console.log(value1*value12) :
+// let value1 = +prompt("Value 1","enter val 1");
+// let value2 = +prompt("Value 2");
+// let operator = prompt("Operator?")
+
+// operator == "+" ? console.log(value1+ value2) : operator == "*" ? console.log(value1* value2) :
 // operator =="/" ? console.log(value1/value2) : console.log("not defined")
+
+
+// var name = prompt("Enter Name here..")
+
+// name == "Usman" ? console.log("Allowed"): console.log("Not Allowed");
+
 
 
 
 
 //  ====================  SPREAD OPERATORS
+
+
 
 // we are going to merge this. We use spread operators for this. spread operator andr ki sari values laa kr de deta hai
 
@@ -183,10 +195,38 @@
 
 
 
+// let student = {
+//     Name: "Usman Rahim",
+//     Age : 22,
+//     Class: "BSSE Sec A",
+//     CGPA : 3.4
+// }
+
+// let moreInfo = {
+//     UniversityName : "University Of Karachi",
+//     DepartmentName : "UBIT"
+// }
+
+// let studentInformation = {
+//     ...student,
+//     ...moreInfo
+// }
+
+// console.log(studentInformation)
+
+
+// let Array1 = ["ABC","DEF",22];
+// let Array2 = ["Ioiioajsoiaioshfa", ...Array1]
+
+// console.log(Array2)
+
+
 
 
 
 // =================== Destructuring ========
+
+
 
 
 
@@ -219,6 +259,34 @@
 
 
 
+// let values = [12,32,55,66,7,87,5];
+// let [first,second,third,fourth,fifth,sixth,seven] = values;
+
+// console.log(second);
+// console.log(fifth)
+// console.log(seven)
+
+// function valueGetter(){
+//     return[21,3,4,53,43]
+// }
+
+// let [first,second,third,fourth,fifth] = valueGetter()
+// console.log(third);
+
+
+// function hehe(a){
+//     return [a]
+// }
+
+// let [first] = hehe("abc")
+// let [second] = hehe("def")
+
+// console.log(first)
+// console.log(second)
+
+
+
+
 // OBjects mn naam apni mrzi sy nahi de skty
 
 // let obj1 = {
@@ -233,7 +301,16 @@
 // console.log(name)
 
 
+// let obj2 = {
+//     name:"Usman Rahim",
+//     FatherName:"Abdul Rahim",
+//     age:22,
+//     Class:"Intermediate",
+// }
 
+// let {name,FatherName,age,Class} = obj2;
+// console.log(name,age)
+// console.log(name+" | "+FatherName)
 
 //  =================  FUNCTIONS ============
 
@@ -252,6 +329,18 @@
 // a(123)
 
 
+// let sum = (a,b) =>{
+//     console.log(a+b)
+// }
+// sum(12,2)
+
+// let multiply = (a,b,c)=>{
+//     console.log(a*b*c)
+
+// }
+// multiply(2,2,3)
+
+
 // agar single parameter de rahay hain to rpound bracket bhi hata sakty hain
 
 // let a = c =>{
@@ -267,6 +356,21 @@
 // let d = b();
 // console.log(d)
 
+
+// let mean = a =>{
+//     console.log(a)
+// }
+// mean(1231)
+
+
+// let beta = () =>{
+//     return 12+12+12;
+// }
+// let add = beta()
+// console.log(add)
+// console.log(beta())
+
+
 // agar single cheez return krani hai to usky liye kch bhi na likho
 
 // let a = (b) => b
@@ -274,6 +378,12 @@
 // let d = a("asda")
 // console.log(d)
 
+
+// let single = (a,b) => a+b;
+// console.log(single(2,2))
+
+// let double = (a,e,d,r) => a+e+d+r;
+// console.log(double(2,2,2,2))
 
 
 // let b = a => a;
@@ -311,35 +421,35 @@
 // foreach
 
 
-let a = [
-    {
-        name:"Usman",
-        age:22,
-        id:1,
-        category:"A"
-    },
+// let a = [
+//     {
+//         name:"Usman",
+//         age:22,
+//         id:1,
+//         category:"A"
+//     },
     
-    {
-        name:"Rizwan",
-        age:22,
-        id:2,
-        category:"A"
-    },
+//     {
+//         name:"Rizwan",
+//         age:22,
+//         id:2,
+//         category:"A"
+//     },
     
-    {
-        name:"Sami",
-        age:22,
-        id:3,
-        category:"B"
-    },
+//     {
+//         name:"Sami",
+//         age:22,
+//         id:3,
+//         category:"B"
+//     },
     
-    {
-        name:"Hassaan",
-        age:22,
-        id:4,
-        category:"C"
-    }
-]
+//     {
+//         name:"Hassaan",
+//         age:22,
+//         id:4,
+//         category:"C"
+//     }
+// ]
 
 // a.map((e)=>{
 //     console.log(e)
@@ -368,17 +478,17 @@ let a = [
 
 
 
-a.forEach(x=>{
-    x.inst = "URK"
-    // delete x.name; //just checking
-})
-console.log(a)
+// a.forEach(x=>{
+//     x.inst = "URK"
+//     // delete x.name; //just checking
+// })
+// console.log(a)
 
-let obj = a.find(x=>x.name == "Sami")
-console.log(obj)
+// let obj = a.find(x=>x.name == "Sami")
+// console.log(obj)
 
-let status = a.some(x=>x.isChecked)
-console.log(status)
+// let status = a.some(x=>x.isChecked)
+// console.log(status)
 
-let ind = a.findIndex(x=>x.id == 3)
-console.log(ind)
+// let ind = a.findIndex(x=>x.id == 3)
+// console.log(ind)
