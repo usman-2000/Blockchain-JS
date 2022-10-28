@@ -395,6 +395,11 @@
 // //yahan pr a high order hai or b callback function hai
 
 
+// let variable = first => first;
+// let first = e => console.log(e);
+
+// first(variable("Hello World"))
+
 
 // let a = () =>{
 //     console.log("main");
@@ -409,9 +414,25 @@
 // a()()
 
 
+// let main =() =>{
+//     console.log("Main")
+//     return () =>{
+//         console.log("Nested")
+//     }
+// }
+
+// main()()
+
+
+
+
 
 
 // =================ARRAY FUNCTION
+
+
+
+
 
 // map
 // filter   ---- filter returns all indexes jis jis mn condition true hojayegi
@@ -419,6 +440,10 @@
 // findIndex
 // some
 // foreach
+
+
+
+
 
 
 // let a = [
@@ -492,3 +517,81 @@
 
 // let ind = a.findIndex(x=>x.id == 3)
 // console.log(ind)
+
+
+
+
+
+// -----------------------------------------------
+
+
+// let a = [
+//     {
+//         BookName:"Learn English in 20 Days",
+//         AuthorName:"William Basheera",
+//         BookID:1,
+//         language:"English",
+//         category:"A"
+//     },
+//     {
+//         BookName:"Hello Programming",
+//         AuthorName:"Mike Tyson",
+//         BookID:2,
+//         language:"English",
+//         category:"B"
+//     },
+//     {
+//         BookName:"Hello Programming",
+//         AuthorName:"Mike Tyson",
+//         BookID:3,
+//         language:"English",
+//         category:"A"
+//     }
+// ]
+
+// a.map((e)=>{
+//     console.log(e)
+// })
+// a.map(()=>{
+//     console.log(`The name of the book is ${a[0].BookName} and the author is ${a[0].AuthorName}`)
+// })
+
+
+
+// a.filter(x=>{
+//     console.log(x)
+// })
+
+// let b = a.filter(x=>{
+//     if(x.BookID==2){
+//         console.log(x.BookName,x.AuthorName)
+//     }
+// })
+
+// let c = a.filter(x=>x.BookID==1)
+// console.log(c)
+
+
+// a.forEach(x=>{
+//     x.institute="URK ENTERPRISES"
+// })
+// console.log(a)
+
+// let names = a.find(x=>x.BookName == "Hello Programming")
+// console.log(names)
+
+// let status = a.some(x=>x.category=="A")
+// console.log(status)
+
+// let status1 = a.some(x=>x.BookID==4)
+// console.log(status1)
+
+
+// let ind1 = a.findIndex(x=>x.BookID==1)
+// console.log(ind1)
+
+// let ind2 = a.findIndex(x=>x.BookID==2)
+// console.log(ind2)
+
+// let ind3 = a.findIndex(x=>x.BookID==5)
+// console.log(ind3)
